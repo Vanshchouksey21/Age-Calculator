@@ -1,0 +1,98 @@
+/* General reset for clean styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e5e5e5;  /* Lighter neutral gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.mainDiv {
+    background-color: #ffffff;  /* White background for the main div */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 10px 0;
+    color: #1a73e8;  /* Blue color for the heading */
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+#ageDisplayContainer {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+#ageDisplayContainer .c1,
+#ageDisplayContainer .c2,
+#ageDisplayContainer .c3 {
+    text-align: center;
+}
+
+#ageDisplayContainer h1 {
+    margin: 5px 0;
+    font-size: 24px;
+    color: #4caf50;  /* Green color for the age display */
+}
+
+input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #135ba1;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #ageDisplayContainer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #ageDisplayContainer .c1,
+    #ageDisplayContainer .c2,
+    #ageDisplayContainer .c3 {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    #ageDisplayContainer h1 {
+        font-size: 20px;
+    }
+}
